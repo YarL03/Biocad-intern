@@ -9,5 +9,8 @@
   },
   "author": "Yaroslav Labetsky",
   "license": "ISC",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
