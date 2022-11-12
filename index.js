@@ -23,7 +23,7 @@ const app = new App
 
 const router = new Router
 
-app.use(parseUrl('http://localhost:3000')) // заглушка
+app.use(parseUrl('https://biocad-task.herokuapp.com'))
 
 router.get('/', (req, res) => {
     res.writeHead(200, {'Content-Type': 'text/html; charset=utf8'})
