@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <title>Тестовое задание 2022 BIOCAD</title>
+
+        <link rel="stylesheet" href="./style.css">
+
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">
+                <img src="./img/logo.jpg" alt="logo">
+            </div>
+            <nav class="menu">
+                <a href="/" class="menu__link menu__link-selected">
+                    Главная
+                </a>
+                <a href="/analytics" class="menu__link">
+                    Аналитика
+                </a>
+            </nav>
+            <div class="user">
+                <img src="./img/user.jpg" alt="user">
+            </div>
+        </header>
+        <div class="wrapper">
+            <div class="search">
+                <input class="search__item" placeholder="Поиск приборы в Botanique по номеру, названию, подразделению и др." type="text">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.5 4.5V7.5H4.5V4.5H7.5ZM9 3H3V9H9V3ZM7.5 12.5V15.5H4.5V12.5H7.5ZM9 11H3V17H9V11ZM15.5 4.5V7.5H12.5V4.5H15.5ZM17 3H11V9H17V3ZM11 11H12.5V12.5H11V11ZM12.5 12.5H14V14H12.5V12.5ZM14 11H15.5V12.5H14V11ZM11 14H12.5V15.5H11V14ZM12.5 15.5H14V17H12.5V15.5ZM14 14H15.5V15.5H14V14ZM15.5 12.5H17V14H15.5V12.5ZM15.5 15.5H17V17H15.5V15.5ZM20 5H18V2H15V0H20V5ZM20 20V15H18V18H15V20H20ZM0 20H5V18H2V15H0V20ZM0 0V5H2V2H5V0H0Z" fill="black" fill-opacity="0.87"/>
+                </svg>
+            </div>
+            <div class="favorite">
+                <div class="favorite__header">
+                    <svg width="16" height="16" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.35L8.55 17.03C3.4 12.36 0 9.28 0 5.5C0 2.42 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.09C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.42 20 5.5C20 9.28 16.6 12.36 11.45 17.04L10 18.35Z" fill-opacity="0.87"/>
+                    </svg>
+                    <span>Любимое</span>
+                </div>
+                <div class="cart">
+                    <table class="table">
+                        <thead class="table__header">
+                            <tr>
+                                <th></th>
+                                <th>Название</th>
+                                <th>Статус</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody class="table__body">
+                            <tr class="bodyRow">
+                                <td class="bodyRow__icon"><img src="./img/SevenCompact-pH-meter.jpg" alt=""></td>
+                                <td class="bodyRow__name">pH-метр Mettler-Toledo</td>
+                                <td class="bodyRow__cardstate">
+                                    <select name="cardState" id="">
+                                        <option value="free">Свободен</option>
+                                        <option value="busy">Занят</option>
+                                    </select>
+                                </td>
+                                <td class="bodyRow__notification bodyRow__notification-active"><img src="./img/notifications_active-24px.png" alt=""></td>
+                            </tr>
+                            <tr class="bodyRow">
+                                <td class="bodyRow__icon"><img src="./img/Spectro.jpg" alt=""></td>
+                                <td class="bodyRow__name">Спектрофотометр Varian, Inc Cary 50 Bio</td>
+                                <td class="bodyRow__cardstate">
+                                    <select name="cardState" id="">
+                                        <option value="free">Свободен</option>
+                                        <option value="busy">Занят</option>
+                                    </select>
+                                </td>
+                                <td class="bodyRow__notification bodyRow__notification-active"><img src="./img/notifications_active-24px.png" alt=""></td>
+                            </tr>
+                            <tr class="bodyRow">
+                                <td class="bodyRow__icon"><img src="./img/Titrator.jpg" alt=""></td>
+                                <td class="bodyRow__name">Титратор</td>
+                                <td class="bodyRow__cardstate">
+                                    <select name="cardState" id="">
+                                        <option value="free">Свободен</option>
+                                        <option value="busy">Занят</option>
+                                    </select>
+                                </td>
+                                <td class="bodyRow__notification bodyRow__notification-none"><img src="./img/notif-none.png" alt=""></td>
+                            </tr>
+                            <tr class="bodyRow">
+                                <td class="bodyRow__icon"><img src="./img/Koagulometr.jpg" alt=""></td>
+                                <td class="bodyRow__name">Коагулометр Tcoag, KC 4 Delta</td>
+                                <td class="bodyRow__cardstate">
+                                    <select name="cardState" id="">
+                                        <option value="free">Свободен</option>
+                                        <option value="busy">Занят</option>
+                                    </select>
+                                </td>
+                                <td class="bodyRow__notification bodyRow__notification-off"><img src="./img/notif-off.png" alt=""></td>
+                            </tr>
+                            <tr class="bodyRow">
+                                <td class="bodyRow__icon"><img src="./img/Koagulometr.jpg" alt=""></td>
+                                <td class="bodyRow__name">Коагулометр Tcoag, KC 4 Delta</td>
+                                <td class="bodyRow__cardstate">
+                                    <select name="cardState" id="">
+                                        <option value="free">Свободен</option>
+                                        <option value="busy">Занят</option>
+                                    </select>
+                                </td>
+                                <td class="bodyRow__notification bodyRow__notification-off"><img src="./img/notif-off.png" alt=""></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <script defer src="./main.js"></script>
+    </body>
+</html>
