@@ -2,7 +2,7 @@ const like = document.querySelector('.like')
 
 
 
-fetch('https://biocad-task.herokuapp.com/api/analytics?liked')
+fetch('https://biocad-task.onrender.com/api/analytics?liked')
 .then(res => res.json())
 .then(data => {
     console.log(data)
@@ -19,7 +19,7 @@ fetch('https://biocad-task.herokuapp.com/api/analytics?liked')
 
         like.setAttribute('data-liked', liked)
 
-        fetch('https://biocad-task.herokuapp.com/api/analytics?liked', {
+        fetch('https://biocad-task.onrender.com/api/analytics?liked', {
             method: 'POST',
             body: JSON.stringify(liked),
             headers: {

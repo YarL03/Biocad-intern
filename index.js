@@ -1,5 +1,6 @@
 import App from "./app/app.js";
 import Router from "./app/router.js";
+import { cors } from "./middlewares/cors.js";
 import { parseUrl } from "./middlewares/parseUrl.js";
 
 const db = {
@@ -23,7 +24,8 @@ const app = new App
 
 const router = new Router
 
-app.use(parseUrl('https://biocad-task.herokuapp.com'))
+app.use(parseUrl('https://biocad-task.onrender.com'))
+app.use(cors)
 
 router.get('/', (req, res) => {
     res.writeHead(200, {'Content-Type': 'text/html; charset=utf8'})
